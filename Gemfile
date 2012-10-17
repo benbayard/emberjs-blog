@@ -6,6 +6,11 @@ gem 'rails', '3.2.7'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+group :test do
+	gem 'rspec-rails'
+	gem 'factory_girl_rails'
+	gem 'shoulda'
+end
 
 
 # Gems used only for assets and not required
@@ -20,9 +25,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~>1.0.19' 
 gem 'ember-rails'
-
+gem 'haml'
+gem 'haml-rails'
+gem 'sorcery'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

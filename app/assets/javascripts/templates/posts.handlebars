@@ -1,0 +1,8 @@
+<h1>List Of Posts</h1>
+
+{{#each post in controller}}
+	<h1><a {{action showPost post href=true}}>{{post.title}}</a></h1>
+	<div>{{post.content}}</div>
+{{/each}}
+
+{{outlet}}

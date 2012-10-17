@@ -58,5 +58,13 @@ module EmberjsBlog
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    #Ember Version
+    config.ember.variant = :development
+    #change to rpec for tests!
+    config.generators do |g|
+        g.test_framework :rspec
+    end
+
   end
 end
